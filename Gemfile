@@ -2,10 +2,19 @@ source 'http://rubygems.org'
 
 #gem 'rails', :git => 'git://github.com/rails/rails.git'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0.beta1'
+#gem 'rails', '4.0.0.beta1'
+gem 'railties', '~> 4.0.0.beta1'
+gem 'actionpack', '~> 4.0.0.beta1'
+gem 'actionmailer', '~> 4.0.0.beta1'
+gem 'activemodel', '~> 4.0.0.beta1'
+gem 'simply_stored', :require => 'simply_stored/couch'
 
-gem 'activerecord-deprecated_finders', :git => 'git://github.com/rails/activerecord-deprecated_finders.git'
+#gem 'activerecord-deprecated_finders', :git => 'git://github.com/rails/activerecord-deprecated_finders.git'
 gem 'journey', :git => 'git://github.com/rails/journey.git'
+
+
+gem 'haml'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
