@@ -1,4 +1,4 @@
 rvm use ruby-head
 rvm gemset use project_ideas
-alias rails="`bundle show rails`/railties/bin/rails"
+alias rails="/home/amol/.rvm/gems/ruby-head@project_ideas/bin/rails"
 

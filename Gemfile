@@ -6,17 +6,41 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'activerecord-deprecated_finders', :git => 'git://github.com/rails/activerecord-deprecated_finders.git'
 gem 'journey', :git => 'git://github.com/rails/journey.git'
+gem 'protected_attributes'
+gem 'formtastic'
 
 gem 'haml'
+gem "haml-rails"
+
 gem 'rinku'
 
+gem 'devise'
+#gem 'devise_invitable'
+gem 'cancan'
+
+gem 'mysql2'
+
 gem 'execjs'
+
+gem 'kaminari'
+gem "nested_form"
+gem 'warbler'
+
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'oauth2'
+gem 'omniauth-google'
+
+gem "galetahub-simple_captcha", :require => "simple_captcha"
 
 gem "exception_notification",
   :git => "git://github.com/rails/exception_notification.git",
   :require => "exception_notifier"
 
 gem 'oauth'
+
+gem 'bootstrap-sass'
+gem 'simple_form'
 
 # Gems used only for assets and not required
 # in production environments by default.

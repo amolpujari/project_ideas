@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    %title= content_for?(:title) ? yield(:title) : "Myapp"
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    = stylesheet_link_tag "application", :media => "all"
+    = csrf_meta_tags
+    = yield(:head)
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      %nav.navbar-inner{:style => "min-height:100px"}
+        .container
+          = render 'layouts/navigation'
+    #main{:role => "main", :style => "background-color:#010103;"}
+      .container
+        .content{:style => "min-height:700px;"}
+          .row
+            .span12
+              = render 'layouts/messages'
+              .row-fluid{:style => "margin-top:110px;"}
+                = yield
+          %footer
+    = javascript_include_tag "application"
+          
